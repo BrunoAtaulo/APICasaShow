@@ -11,6 +11,7 @@ namespace CasaDeShow.Controllers.API
     [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
+    
     public class CasaShowAPIController : ControllerBase
     {
         private readonly ApplicationDbContext database;

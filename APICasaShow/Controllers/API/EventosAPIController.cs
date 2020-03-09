@@ -47,6 +47,24 @@ namespace CasaDeShow.Controllers.API
         /// <summary>
         /// Criar evento.
         /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     Nota:
+        ///     {
+        ///        No Gênero da música inserir números de 1 a 8:
+        ///        1 - Rock
+        ///         2 - Pop
+        ///         3 - Pagode
+        ///         4 - Samba
+        ///         5 - Axé
+        ///         6 - Gospel
+        ///         7 - Forró
+        ///         8 - Funk
+        ///         Qualquer outro valor = Rock
+        ///     }
+        ///
+        /// </remarks>
         [HttpPost]
         public IActionResult Post([FromBody] eventoTemp etemp)
         {
@@ -122,6 +140,24 @@ namespace CasaDeShow.Controllers.API
         /// <summary>
         /// Editar evento pelo ID.
         /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     Nota:
+        ///     {
+        ///        No Gênero da música inserir números de 1 a 8:
+        ///        1 - Rock
+        ///         2 - Pop
+        ///         3 - Pagode
+        ///         4 - Samba
+        ///         5 - Axé
+        ///         6 - Gospel
+        ///         7 - Forró
+        ///         8 - Funk
+        ///         Qualquer outro valor = Rock
+        ///     }
+        ///
+        /// </remarks>
         [HttpPut]
         public IActionResult Put([FromBody] eventoTemp etemp, int id)
         {

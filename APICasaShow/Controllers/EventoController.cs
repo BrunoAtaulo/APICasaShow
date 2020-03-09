@@ -68,7 +68,7 @@ namespace CasaDeShow.Controllers
             }
         }
 
-        //---------- Compra ----------Alterar
+        //---------- Compra ----------
         public async Task<IActionResult> Compra(int? id)
         {
             var user = await _userManager.GetUserAsync(User);
